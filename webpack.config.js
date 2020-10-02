@@ -1,10 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin')
 
-const {API_URL, WEBPACK_SERVE} = process.env
-
+const {WEBPACK_SERVE} = process.env
 const isDev = Boolean(WEBPACK_SERVE)
-
-const API_BASE = API_URL || 'http://localhost:8000'
 
 module.exports = {
   entry: `${__dirname}/src`,
@@ -15,8 +12,11 @@ module.exports = {
   plugins: [
     new HtmlPlugin({
       favicon: `${__dirname}/assets/favicon.ico`,
-      template: 'src/index.html',
-      filename: '200.html'
+      template: 'src/index.html'
+    }),
+    new HtmlPlugin({
+      template: 'src/_redirects',
+      filename: '_redirects'
     })
   ],
   devtool: 'cheap-module-source-map',
