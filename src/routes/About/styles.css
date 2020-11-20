@@ -14,3 +14,18 @@
   font-family: monospace;
   cursor: default;
 }
+
+.face a {
+  color: black;
+  background: white;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 13px;
+  border: 2px solid white;
+  padding: 3px 5px;
+
+  &:hover {
+    opacity: 1;
+  }
+}

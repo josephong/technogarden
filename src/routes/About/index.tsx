@@ -52,7 +52,7 @@ const About: FunctionComponent<{}> = () => {
       
       text.enter()
         .append('div')
-        .text(node => node.text)
+        .html(node => node.text)
         .attr('class', cs.face)
         .style('font-size', node => node.fontSize)
       

@@ -83,7 +83,8 @@ racc  __' .::'
 `hi friend`,
 `under construction`,
 `nice to see u`,
-`we are all stories`,
+`<a href="https://josephong.tumblr.com">we are all stories</a>
+`,
 ]
 
 const faces = text.map(t => {
