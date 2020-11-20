@@ -80,6 +80,10 @@ racc  __' .::'
 `❀`,
 `❁`,
 `❃`,
+`hi friend`,
+`under construction`,
+`nice to see u`,
+`we are all stories`,
 ]
 
 const faces = text.map(t => {
