@@ -16,11 +16,11 @@ const generateRanges = fs => {
 }
 
 const ranges = generateRanges(faces)
-const generateNodes = size => range(0, 75).map(() => Math.random())
+const generateNodes = size => range(0, 80).map(() => Math.random())
   .map(entry => findIndex(ranges, range => range > entry))
   .map((faceIdx, i)  => ({
     id: i,
-    radius: Math.max(faces[faceIdx].width, faces[faceIdx].height) * 4,
+    radius: Math.max(faces[faceIdx].width, faces[faceIdx].height) * 6,
     fontSize: faces[faceIdx].fontSize,
     text: faces[faceIdx].text,
     x: Math.random() * size.width,
@@ -63,9 +63,9 @@ const About: FunctionComponent<{}> = () => {
       }
 
       const simulation = d3.forceSimulation(nodes)
-                      .force("charge", d3.forceManyBody(-50))
-                      .force("x", d3.forceX().x(d => Math.random() * size.width))
-                      .force("y", d3.forceY().y(d => Math.random() * size.height))
+                      .force("charge", d3.forceManyBody(-200))
+                      .force("x", d3.forceX().x(d => Math.random() * 1.5 * size.width))
+                      .force("y", d3.forceY().y(d => Math.random() * 1.5 * size.height))
                       .force("collide", d3.forceCollide(d => d.radius))
                       .alphaDecay(0)
                       .velocityDecay(0.995)
@@ -73,9 +73,9 @@ const About: FunctionComponent<{}> = () => {
 
       interval = setInterval(() => {
         simulation
-          .force("x", d3.forceX().x(d => Math.random() * size.width))
-          .force("y", d3.forceY().y(d => Math.random() * size.height))
-      }, 3000)
+          .force("x", d3.forceX().x(d => Math.random() * 1.5 * size.width))
+          .force("y", d3.forceY().y(d => Math.random() * 1.5 * size.height))
+      }, 10000)
     }
   }, [nodes])
 
