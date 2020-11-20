@@ -1,0 +1,15 @@
+.textWrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: black;
+  color: white;
+}
+
+.face {
+  position: absolute;
+  white-space: pre;
+  font-family: monospace;
+}

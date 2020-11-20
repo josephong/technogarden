@@ -5,6 +5,15 @@ export default class Garden extends React.Component<{}, {}> {
     return (
       <div>
         ❤
+        Mind
+        Body
+        Soul
+
+        Athleticism
+        Dance
+          -
+        Music
+          -> Spotify Playlists
       </div>
     )
   }

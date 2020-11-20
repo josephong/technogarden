@@ -10,7 +10,7 @@ class App extends React.Component<{}, {}> {
     return (
       <Router>
         <div>
-          <Route path="/" component={Garden} exact />
+          <Route path="/" component={About} exact />
           <Route path="/garden" component={Garden} exact />
           <Route path="/about" component={About} exact />
         </div>
