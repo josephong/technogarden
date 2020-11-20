@@ -4,12 +4,13 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: black;
   color: white;
+  transition: 2s linear background;
 }
 
 .face {
   position: absolute;
   white-space: pre;
   font-family: monospace;
+  cursor: default;
 }
