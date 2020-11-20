@@ -1,6 +1,6 @@
 import React, {useRef, useEffect, useState} from 'react'
 import {map, sum, findIndex, range} from 'lodash'
-import randomColor from 'randomColor'
+import randomColor from 'randomcolor'
 import useComponentSize from '@rehooks/component-size'
 import * as d3 from 'd3'
 
