@@ -1,6 +1,8 @@
 import {max} from 'lodash'
 
 const text = [
+`<a href="https://josephong.tumblr.com">we are all stories</a>
+`,
 `                              .                : :
             _..----..__   __..:'.-'''-.-''    .  :
           .'      ,    '''    '    :   .'    /  '
@@ -83,8 +85,6 @@ racc  __' .::'
 `hi friend`,
 `under construction`,
 `nice to see u`,
-`<a href="https://josephong.tumblr.com">we are all stories</a>
-`,
 ]
 
 const faces = text.map(t => {

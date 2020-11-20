@@ -17,7 +17,7 @@ const generateRanges = fs => {
 }
 
 const ranges = generateRanges(faces)
-const generateNodes = size => range(0, 100).map(() => Math.random())
+const generateNodes = size => [0, ...range(0, 100).map(() => Math.random())]
   .map(entry => findIndex(ranges, range => range > entry))
   .map((faceIdx, i)  => ({
     id: i,
@@ -38,7 +38,9 @@ const About: FunctionComponent<{}> = () => {
 
   useEffect(() => {
     if (textWrapperRef.current !== null && size.height !== 0) {
-      setNodes(generateNodes(size))
+      if (nodes === null) {
+        setNodes(generateNodes(size))
+      }
     }
   }, [textWrapperRef.current, size.height])
 
