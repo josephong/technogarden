@@ -6,42 +6,31 @@ const pages = [
   {
     text: () => (
       <>
-        <div className={cs.topLeft}>
-<strong>no goodbye is ever long enough</strong>
+<strong>guilty / pleasure</strong>
 {`
 
-i have always cared more about
-how things end
-than how they begin
+my arms yawn
+drawing this morning out across the horizon
+elasticity returning to quiescence
+the dialectic of id and egos 
 
-but at the end of this last day we share,
-as the sun finishes its radiant arc across the sky
-and your favorites, sunflowers, find themselves
-lost,
+having neither brushed my teeth
+nor cleansed the slough of yesterday,
+memory foam and memories foaming,
+fulguration of alacrity postponed,
 
-we draw a final bath,
-the twilight crescent of your body
-both cradles and slashes mine,
-floral fragrance rises off water.
-i wade through your lush garden, 
-rose petals fluttering to the ground
-as only thorns remain.`}
-        </div>
-        <div className={cs.bottomRight}>
-{`we fall asleep watching the`} <i>The Endless</i>
+i masturbate to the previous poem
+
+forgivingly
+`}
+<a href="https://open.spotify.com/track/5OiQrtOkyU2sY7UPmGtUYJ?si=fFho5XygSpCDhXK_gRZ-Rg" target="_blank" rel="noopener noreferrer">
 {`
-and i wish our time too would loop
-over and over to this tragic end,
-but the dawn gives way to a day different
-than these last few already filled too full.
-
-yet, as i kiss you farewell,
-watch you walk away, my heart brimming
-with an infinity of things i could still say,
-bereft, i realize:
-
-no goodbye is ever long enough.`}
-        </div>
+[February the 10th
+Sunday
+Noise
+Peace]
+`}
+</a>
       </>
     ),
     background: {
@@ -145,6 +134,55 @@ for        me
     },
     audio: {
       src: 'https://freesound.org/data/previews/537/537854_11926345-lq.mp3',
+    }
+  },
+  {
+    text: () => (
+      <>
+        <div className={cs.topLeft}>
+<strong>no goodbye is ever long enough</strong>
+{`
+
+i have always cared more about
+how things end
+than how they begin
+
+but at the end of this last day we share,
+as the sun finishes its radiant arc across the sky
+and your favorites, sunflowers, find themselves
+lost,
+
+we draw a final bath,
+the twilight crescent of your body
+both cradles and slashes mine,
+floral fragrance rises off water.
+i wade through your lush garden, 
+rose petals fluttering to the ground
+as only thorns remain.`}
+        </div>
+        <div className={cs.bottomRight}>
+{`we fall asleep watching the`} <i>The Endless</i>
+{`
+and i wish our time too would loop
+over and over to this tragic end,
+but the dawn gives way to a day different
+than these last few already filled too full.
+
+yet, as i kiss you farewell,
+watch you walk away, my heart brimming
+with an infinity of things i could still say,
+bereft, i realize:
+
+no goodbye is ever long enough.`}
+        </div>
+      </>
+    ),
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1k2IPfzhFXKsiNcUKkaWOUWkW6QicJFbH',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/199/199515_3272432-lq.mp3',
     }
   },
 ]
