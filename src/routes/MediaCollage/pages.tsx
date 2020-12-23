@@ -129,7 +129,7 @@ a quiet repose
 a parched pond
 a willow tree
 `}
-<a href="https://open.spotify.com/track/0AwtRpubA0XprHmhMkeFQf?si=fj0ycffYSh6JIVtKURfpoA">
+<a href="https://open.spotify.com/track/0AwtRpubA0XprHmhMkeFQf?si=fj0ycffYSh6JIVtKURfpoA" target="_blank" rel="noopener noreferrer">
 {`[the song a robin sings
 through years of endless spring]`}
 </a>
