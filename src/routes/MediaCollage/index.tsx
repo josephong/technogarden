@@ -28,11 +28,9 @@ const randomPageIdx = exclude => {
 const TRANSITION_MS = 1000
 const TRANSITION_S = TRANSITION_MS / 1000
 
-const audioContext = new AudioContext()
-const fadeGainNode = audioContext.createGain()
-const enterGainNode = audioContext.createGain()
-fadeGainNode.connect(audioContext.destination)
-enterGainNode.connect(audioContext.destination)
+let audioContext;
+let fadeGainNode;
+let enterGainNode;
 
 const MediaCollage: FunctionComponent<{}> = props => {
   const {page} = useParams()
@@ -47,6 +45,15 @@ const MediaCollage: FunctionComponent<{}> = props => {
       const newPage = randomPageIdx(selectedPageIdx)
       history.push(`/pastiche/${newPage}`)
     }
+  }
+
+  const startAudioContext = () => {
+    audioContext = new AudioContext()
+    fadeGainNode = audioContext.createGain()
+    enterGainNode = audioContext.createGain()
+    fadeGainNode.connect(audioContext.destination)
+    enterGainNode.connect(audioContext.destination)
+    setStarted(true)
   }
 
   useEffect(() => {
@@ -101,7 +108,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
             classNames={fadeClasses}
           >
             <div>
-              <div className={cs.start} onClick={() => setStarted(true)}>
+              <div className={cs.start} onClick={startAudioContext}>
                 hey. breathe and then click me.
               </div>
             </div>
