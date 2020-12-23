@@ -4,7 +4,7 @@ import {random} from 'lodash'
 import {useParams, useHistory} from 'react-router-dom'
 
 import cs from './styles.css'
-import pages from './pages.tsx'
+import pages from './pages'
 
 const fadeClasses = {
   enter: cs.fadeEnter,
@@ -72,7 +72,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
   }, [started, selectedPage])
 
   useEffect(() => {
-    if (currentSource) {
+    if (currentSource !== undefined) {
       enterGainNode.gain.setValueAtTime(0.0001, audioContext.currentTime)
       currentSource.connect(enterGainNode)
       currentSource.start(audioContext.currentTime)
@@ -80,7 +80,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
     }
         
     return () => {
-      if (currentSource) {
+      if (currentSource !== undefined) {
         currentSource.disconnect(enterGainNode)
         fadeGainNode.gain.setValueAtTime(1, audioContext.currentTime)
         currentSource.connect(fadeGainNode)
@@ -100,7 +100,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
             timeout={TRANSITION_MS}
             classNames={fadeClasses}
           >
-            <div className={cs.controls}>
+            <div>
               <div className={cs.start} onClick={() => setStarted(true)}>
                 hey. breathe and then click me.
               </div>
