@@ -33,6 +33,7 @@ Peace]
 </a>
       </>
     ),
+    textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1V8-l9Wtij_JvDu51Oe6VlNN9qvEe5gLt',
