@@ -129,7 +129,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
                   />
                 }
               </div>
-              <div className={cs.text}>
+              <div className={cs.text} style={{color: selectedPage.textColor}}>
                 <div className={cs.textFrame}>
                   <selectedPage.text />
                 </div>

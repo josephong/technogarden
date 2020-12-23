@@ -105,6 +105,48 @@ In colors on the snowy linen land]
       src: 'https://freesound.org/data/previews/410/410728_270868-lq.mp3',
     }
   },
+  {
+    text: () => (
+      <>
+<strong>this night is not for us</strong>
+{`
+
+this night, as beautiful as it is,
+with indigo-splashed twilight skies
+that remind me of your     jeans,
+is not for us
+
+this night, with cherry blossoms that fall
+   gently,
+         magically,
+                                         tragically,
+in the soft breeze,
+and with no eyes but mine to see,
+falling on benches empty and free,
+is not for us
+
+a quiet repose
+a parched pond
+a willow tree
+`}
+<a href="https://open.spotify.com/track/0AwtRpubA0XprHmhMkeFQf?si=fj0ycffYSh6JIVtKURfpoA">
+{`[the song a robin sings
+through years of endless spring]`}
+</a>
+{`
+for        me
+`}
+      </>
+    ),
+    textColor: '#3c4e5c',
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1WR2DHka5dNy3UtwJsaWRHbHE_wunY9pr',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/537/537854_11926345-lq.mp3',
+    }
+  },
 ]
 
 export default pages
