@@ -1,0 +1,152 @@
+.media {
+  font-family: 'Spectral', serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.fader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.background video {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+}
+
+.start {
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  background: transparent;
+  border: 2px solid #ccc;
+  background-color: #000;
+  transition: 300ms ease-in all;
+
+  &:hover {
+    color: #333;
+    background-color: #ccc;
+  }
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.fadeEnter {
+  opacity: 0;
+}
+
+.fadeEnterActive {
+  opacity: 0;
+}
+  
+.fadeEnterDone {
+  opacity: 1;
+  transition: 1000ms ease-in opacity;
+}
+
+.fadeAppear {
+  opacity: 0;
+}
+
+.fadeAppearActive {
+  opacity: 1;
+  transition: 1000ms ease-in opacity;
+}
+
+.fadeAppearDone {
+  opacity: 1;
+}
+
+.fadeExit {
+  opacity: 1;
+}
+
+.fadeExitActive {
+  opacity: 0;
+  transition: 1000ms ease-out opacity;
+}
+
+.text {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 8vh 5vw;
+  white-space: pre;
+  font-size: 14px;
+  overflow: auto;
+}
+
+.text a {
+  font-style: italic;
+  color: inherit;
+  text-decoration: none;
+  opacity: 1;
+  transition: 200ms ease opacity;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.textFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.topLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

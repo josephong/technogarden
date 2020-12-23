@@ -57,6 +57,7 @@
     "react-dom": "^16.8.6",
     "react-icons": "^3.8.0",
     "react-popper-tooltip": "^2.10.1",
-    "react-router-dom": "^5.1.0"
+    "react-router-dom": "^5.1.0",
+    "react-transition-group": "^4.4.1"
   }
 }

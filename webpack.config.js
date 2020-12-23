@@ -19,7 +19,7 @@ module.exports = {
       filename: '_redirects'
     })
   ],
-  devtool: 'cheap-module-source-map',
+  devtool: 'source-map',
   mode: 'development',
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],

@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import Garden from './routes/Garden'
 import About from './routes/About'
+import MediaCollage from './routes/MediaCollage'
 
 class App extends React.Component<{}, {}> {
   render() {
@@ -13,6 +14,7 @@ class App extends React.Component<{}, {}> {
           <Route path="/" component={About} exact />
           <Route path="/garden" component={Garden} exact />
           <Route path="/about" component={About} exact />
+          <Route path="/pastiche/:page?" component={MediaCollage} exact />
         </div>
       </Router>
     )

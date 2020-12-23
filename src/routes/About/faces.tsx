@@ -3,6 +3,8 @@ import {max} from 'lodash'
 const text = [
 `<a href="https://josephong.tumblr.com">we are all stories</a>
 `,
+`<a href="/pastiche/">pastiche</a>
+`,
 `                              .                : :
             _..----..__   __..:'.-'''-.-''    .  :
           .'      ,    '''    '    :   .'    /  '
