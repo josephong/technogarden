@@ -2,6 +2,9 @@ import React, {useRef, useEffect, useState} from 'react'
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
 import {random} from 'lodash'
 import {useParams, useHistory} from 'react-router-dom'
+import {AiFillSound} from 'react-icons/ai'
+import {FaRegCaretSquareLeft, FaRegCaretSquareRight} from 'react-icons/fa'
+import {GiClick} from 'react-icons/gi'
 
 import cs from './styles.css'
 import pages from './pages'
@@ -44,6 +47,18 @@ const MediaCollage: FunctionComponent<{}> = props => {
     if (e.target.tagName !== 'A') {
       const newPage = randomPageIdx(selectedPageIdx)
       history.push(`/pastiche/${newPage}`)
+    }
+  }
+
+  const navigateViaKeyboard = e => {
+    if (e.key === 'ArrowRight') {
+      const newPage = selectedPageIdx + 1
+      history.push(`/pastiche/${newPage > pages.length - 1 ? 0 : newPage}`)
+    }
+
+    if (e.key === 'ArrowLeft') {
+      const newPage = selectedPageIdx - 1
+      history.push(`/pastiche/${newPage < 0 ? pages.length - 1 : newPage}`)
     }
   }
 
@@ -98,7 +113,11 @@ const MediaCollage: FunctionComponent<{}> = props => {
   }, [currentSource])
 
   return (
-    <div className={cs.media} onClick={started ? navigateToRandomPage : () => {}}> 
+    <div className={cs.media}
+      tabIndex={0}
+      onClick={started ? navigateToRandomPage : () => {}}
+      onKeyDown={started ? navigateViaKeyboard : () => {}}
+    > 
       <TransitionGroup component={null}>
         {!started && (
           <CSSTransition
@@ -107,9 +126,30 @@ const MediaCollage: FunctionComponent<{}> = props => {
             timeout={TRANSITION_MS}
             classNames={fadeClasses}
           >
-            <div>
+            <div className={cs.preamble}>
               <div className={cs.start} onClick={startAudioContext}>
                 hey. breathe and then click me.
+              </div>
+              <div className={cs.instructions}>
+                <div className={cs.instruction}>
+                  <div className={cs.icons}>
+                    <AiFillSound />
+                  </div>
+                  <span>sound on</span>
+                </div>
+                <div className={cs.instruction}>
+                  <div className={cs.icons}>
+                    <GiClick />
+                  </div>
+                  <span>random navigation</span>
+                </div>
+                <div className={cs.instruction}>
+                  <div className={cs.icons}>
+                    <FaRegCaretSquareLeft />
+                    <FaRegCaretSquareRight />
+                  </div>
+                  <span>sequential navigation</span>
+                </div>
               </div>
             </div>
           </CSSTransition>

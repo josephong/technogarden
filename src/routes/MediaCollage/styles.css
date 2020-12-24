@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  outline: none;
 }
 
 .fader {
@@ -36,8 +37,70 @@
   object-fit: cover;
 }
 
-.start {
+.preamble {
   color: white;
+  text-align: center;
+}
+
+.instructions {
+  margin: 25px;
+  color: #DDD;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.instruction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-fill-mode: backwards;
+
+  &:nth-child(1) {
+    animation-delay: 200ms;
+  }
+  
+  &:nth-child(2) {
+    animation-delay: 400ms;
+  }
+  
+  &:nth-child(3) {
+    animation-delay: 800ms;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.keyboard {
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.start {
+  display: inline-block;
   cursor: pointer;
   padding: 10px 15px;
   background: transparent;

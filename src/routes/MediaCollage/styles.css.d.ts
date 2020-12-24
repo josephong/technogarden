@@ -13,8 +13,14 @@ interface CssExports {
   'fadeExit': string;
   'fadeExitActive': string;
   'fader': string;
+  'icons': string;
   'image': string;
+  'instruction': string;
+  'instructions': string;
+  'keyboard': string;
   'media': string;
+  'preamble': string;
+  'slidein': string;
   'start': string;
   'text': string;
   'textFrame': string;
