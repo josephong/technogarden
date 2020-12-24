@@ -33,7 +33,9 @@ Peace]
 </a>
       </>
     ),
-    textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
+    },
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1V8-l9Wtij_JvDu51Oe6VlNN9qvEe5gLt',
@@ -128,7 +130,9 @@ for        me
 `}
       </>
     ),
-    textColor: '#3c4e5c',
+    textStyles: {
+      color: '#3c4e5c',
+    },
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1WR2DHka5dNy3UtwJsaWRHbHE_wunY9pr',
@@ -184,6 +188,42 @@ no goodbye is ever long enough.`}
     },
     audio: {
       src: 'https://freesound.org/data/previews/199/199515_3272432-lq.mp3',
+    }
+  },
+  {
+    text: () => (
+      <>
+        <div className={cs.topRight}>
+        <strong>Crows (excerpt)</strong>
+{`
+by Mary Oliver
+
+Drive down any road,
+ 
+take a train or an airplane
+across the world, leave
+your old life behind,
+ 
+die and be born again—
+wherever you arrive
+they’ll be there first,
+ 
+glossy and rowdy
+and indistinguishable.
+The deep muscle of the world.`}
+        </div>
+      </>
+    ),
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, .3)',
+      background: 'linear-gradient(90deg, transparent 50%, #35353582 100%)',
+    },
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1Lg3ZcaEzaxHZs23ga_Mem9Hd6ggaXR1F&export=download',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/458/458099_754558-lq.mp3',
     }
   },
 ]

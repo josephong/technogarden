@@ -165,7 +165,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 8vh 5vw;
+  padding: 8vh 5vw;
   white-space: pre;
   font-size: 14px;
   overflow: auto;
