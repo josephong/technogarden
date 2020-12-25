@@ -307,6 +307,63 @@ In colors on the snowy linen land]
       src: 'https://freesound.org/data/previews/331/331530_2305278-lq.mp3',
     }
   },
+  {
+    text: () => (
+      <div className={cx(cs.top, cs.left)}>
+<div>
+<strong>i'm just dancing on my own</strong>
+{`
+
+there is an irony in dancing alone.
+a chaos to sitting silent on the subway,
+wordlessly watching on the way.
+
+a shadow steals past the platform,
+a brisk breeze weaving unfettered
+through the warmth of dawdlers.
+
+chilly air invades clothes too sparse;
+warm contours draw gazes unwanted but welcome –
+ah, to feel the thrill of being desired, yet untouchable,
+victuals for my loneliness voracious.
+
+coat check? fuck that noise.
+
+and as a leap into darkness begins,
+light devoured by humid jaws
+
+    a smile
+    a sigh of eyelids
+    the thrum of the kick
+    the groove of the clap in my `}<i>lena</i>
+{` 
+    `}<i>dolfi. kaka. mako.</i>{`
+
+and if i should move with you, stranger,
+your carnal soma finding my silhouette,
+salvation of skin sacredly seeking skin,
+then savor this brief moment, this `}<i>bibi</i>{`,
+this gaze we hold as i vanish into undulations
+asking for your absolution,
+
+for, alas, alas, nay,
+
+i am here to lose myself.
+`}
+</div>
+      </div>
+    ),
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1hszRKGH4uFbp97ymKDb5dKCo8lnnEjvt',
+    },
+    textStyles: {
+      color: '#eee'
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/328/328365_2305278-lq.mp3',
+    }
+  },
 ]
 
 export default pages
