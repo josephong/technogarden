@@ -308,6 +308,19 @@ In colors on the snowy linen land]
     }
   },
   {
+    text: () => <div />,
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
+    },
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1ABFWco3O6CrZEPRoo2121b90dOVXdVzp',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/71/71868_1059930-lq.mp3',
+    }
+  },
+  {
     text: () => (
       <div className={cx(cs.top, cs.left)}>
 <div>
@@ -454,7 +467,7 @@ for things?`}
     audio: {
       src: 'https://freesound.org/data/previews/423/423401_229952-lq.mp3',
     }
-  }
+  },
 ]
 
 const template = (
