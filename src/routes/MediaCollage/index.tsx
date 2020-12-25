@@ -135,7 +135,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
                   <div className={cs.icons}>
                     <AiFillSound />
                   </div>
-                  <span>sound on</span>
+                  <span>turn on your sound</span>
                 </div>
                 <div className={cs.instruction}>
                   <div className={cs.icons}>

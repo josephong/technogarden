@@ -364,6 +364,83 @@ i am here to lose myself.
       src: 'https://freesound.org/data/previews/328/328365_2305278-lq.mp3',
     }
   },
+  {
+    text: () => (
+      <>
+        <div className={cx(cs.top, cs.left, cs.nogrow)}>
+<div>
+<strong>The Sun</strong>
+<div><i>Mary Oliver</i></div>
+{`
+Have you ever seen
+anything
+in your life
+more wonderful
+
+than the way the sun,
+every evening,
+relaxed and easy,
+floats toward the horizon
+
+and into the clouds or the hills,
+or the rumpled sea,
+and is gone--
+and how it slides again`}
+</div>
+        </div>
+        <div className={cx(cs.top, cs.left, cs.nogrow)}>
+{`
+
+
+out of the blackness,
+every morning,
+on the other side of the world,
+like a red flower
+
+streaming upward on its heavenly oils,
+say, on a morning in early summer,
+at its perfect imperial distance--
+and have you ever felt for anything
+such wild love--
+
+do you think there is anywhere, in any language,
+a word billowing enough
+for the pleasure`}
+        </div>
+        <div className={cx(cs.top, cs.left, cs.nogrow)}>
+{`
+
+
+that fills you,
+as the sun
+reaches out,
+as it warms you
+ 
+as you stand there,
+empty-handed--
+or have you too
+turned from this world--
+ 
+or have you too
+gone crazy
+for power,
+for things?`}
+      </div>
+      </>
+    ),
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1x4rSJNVp2JJJAu3So56Iorytu3HwhGlE',
+    },
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.3)',
+      background: 'linear-gradient(0deg, transparent 50%, #35353582 100%)',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/451/451931_612689-lq.mp3',
+    }
+  },
+
 ]
 
 export default pages

@@ -199,23 +199,31 @@
 .top, .left, .bottom, .right {
   display: flex;
   flex-direction: row;
-  flex: 1 1;
 }
 
 .top {
   align-items: flex-start;
+  flex: 1 1;
 }
 
 .left {
   justify-content: flex-start;
+  flex: 1 1;
 }
 
 .bottom {
   align-items: flex-end;
+  flex: 1 1;
 }
 
 .right {
   justify-content: flex-end;
+  flex: 1 1;
+}
+
+.nogrow {
+  flex: 0 0;
+  margin-right: 60px;
 }
 
 @keyframes club {

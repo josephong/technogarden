@@ -21,6 +21,7 @@ interface CssExports {
   'keyboard': string;
   'left': string;
   'media': string;
+  'nogrow': string;
   'preamble': string;
   'pulse0': string;
   'pulse1': string;
