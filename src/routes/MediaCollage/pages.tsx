@@ -44,7 +44,7 @@ Peace]
       src: 'https://drive.google.com/u/0/uc?id=1V8-l9Wtij_JvDu51Oe6VlNN9qvEe5gLt',
     },
     audio: {
-      src: 'https://freesound.org/data/previews/435/435751_7316415-lq.mp3',
+      src: 'https://freesound.org/data/previews/529/529154_1705934-lq.mp3',
     }
   },
   {
