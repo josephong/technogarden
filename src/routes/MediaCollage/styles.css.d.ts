@@ -2,6 +2,7 @@
 // Please do not change this file!
 interface CssExports {
   'background': string;
+  'beat': string;
   'bottom': string;
   'club': string;
   'fadeAppear': string;
@@ -21,6 +22,10 @@ interface CssExports {
   'left': string;
   'media': string;
   'preamble': string;
+  'pulse0': string;
+  'pulse1': string;
+  'pulse2': string;
+  'pulse3': string;
   'right': string;
   'slidein': string;
   'start': string;

@@ -256,8 +256,9 @@ The deep muscle of the world.
 {`
 
 how does it feel to draw a chamber of the heart
-with your brain, thoughts    pulsing   like ventricles
-ba dum    ba dum    ba dum     a drum unsilenceable
+with your brain, thoughts    `}<span className={cs.pulse0}>pulsing</span>{`   like ventricles
+`}
+<span className={cs.pulse1}>ba dum</span>    <span className={cs.pulse2}>ba dum</span>    <span className={cs.pulse3}>ba dum</span>{`     a drum unsilenceable
 indefatigable
 
 or to trace the color of his eye
