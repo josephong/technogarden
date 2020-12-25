@@ -2,8 +2,8 @@
 // Please do not change this file!
 interface CssExports {
   'background': string;
-  'bottomLeft': string;
-  'bottomRight': string;
+  'bottom': string;
+  'club': string;
   'fadeAppear': string;
   'fadeAppearActive': string;
   'fadeAppearDone': string;
@@ -18,14 +18,15 @@ interface CssExports {
   'instruction': string;
   'instructions': string;
   'keyboard': string;
+  'left': string;
   'media': string;
   'preamble': string;
+  'right': string;
   'slidein': string;
   'start': string;
   'text': string;
   'textFrame': string;
-  'topLeft': string;
-  'topRight': string;
+  'top': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

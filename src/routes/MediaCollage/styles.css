@@ -165,9 +165,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 8vh 5vw;
   white-space: pre;
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
   overflow: auto;
 }
 
@@ -185,31 +188,44 @@
 }
 
 .textFrame {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  flex: 1 1;
+  margin: 8vh 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
 }
 
-.topLeft {
-  position: absolute;
-  top: 0;
-  left: 0;
+.top, .left, .bottom, .right {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1;
 }
 
-.topRight {
-  position: absolute;
-  top: 0;
-  right: 0;
+.top {
+  align-items: flex-start;
 }
 
-.bottomLeft {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.left {
+  justify-content: flex-start;
 }
 
-.bottomRight {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.bottom {
+  align-items: flex-end;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+@keyframes club {
+  0% { color: #ffc0ff; }
+  12.5% { color: #ffb0b0; }
+  25% { color: #ffb86e; }
+  37.5% { color: #ffe45a; }
+  50% { color: #bfff98; }
+  62.5% { color: #61ffe3; }
+  75% { color: #8dc4ff; }
+  82.5% { color: #cec2ff; }
+  100% { color: #ffc0ff; }
 }

@@ -1,11 +1,13 @@
 import React, {useRef, useEffect, useState} from 'react'
+import cx from 'classnames'
 
 import cs from './styles.css'
 
 const pages = [
   {
     text: () => (
-      <>
+      <div className={cx(cs.top, cs.left)}>
+<div>
 <strong>guilty / pleasure</strong>
 {`
 
@@ -31,7 +33,8 @@ Noise
 Peace]
 `}
 </a>
-      </>
+</div>
+      </div>
     ),
     textStyles: {
       textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
@@ -46,8 +49,9 @@ Peace]
   },
   {
     text: () => (
-      <>
-        <strong>kale salad</strong>
+      <div className={cx(cs.top, cs.left)}>
+<div>
+<strong>kale salad</strong>
 {`
 
 i love a good adventure, 
@@ -95,7 +99,8 @@ Even when things fall apart, I still love,
 Even if you break my heart, I still love]
 `}
 </a>
-      </>
+</div>
+      </div>
     ),
     background: {
       type: 'video',
@@ -107,7 +112,8 @@ Even if you break my heart, I still love]
   },
   {
     text: () => (
-      <>
+      <div className={cx(cs.top, cs.left)}>
+<div>
 <strong>this night is not for us</strong>
 {`
 
@@ -136,7 +142,8 @@ through years of endless spring]`}
 {`
 for        me
 `}
-      </>
+</div>
+      </div>
     ),
     textStyles: {
       color: '#3c4e5c',
@@ -152,7 +159,8 @@ for        me
   {
     text: () => (
       <>
-        <div className={cs.topLeft}>
+        <div className={cx(cs.top, cs.left)}>
+<div>
 <strong>no goodbye is ever long enough</strong>
 {`
 
@@ -172,8 +180,10 @@ floral fragrance rises off water.
 i wade through your lush garden, 
 rose petals fluttering to the ground
 as only thorns remain.`}
+</div>
         </div>
-        <div className={cs.bottomRight}>
+        <div className={cx(cs.bottom, cs.right)}>
+<div>
 {`we fall asleep watching the`} <i>The Endless</i>
 {`
 and i wish our time too would loop
@@ -187,6 +197,7 @@ with an infinity of things i could still say,
 bereft, i realize:
 
 no goodbye is ever long enough.`}
+</div>
         </div>
       </>
     ),
@@ -201,7 +212,8 @@ no goodbye is ever long enough.`}
   {
     text: () => (
       <>
-        <div className={cs.topRight}>
+        <div className={cx(cs.top, cs.right)}>
+<div>
         <strong>Crows (excerpt)</strong>
         <div><i>Mary Oliver</i></div>
 {`
@@ -220,6 +232,7 @@ and indistinguishable.
 The deep muscle of the world.
 
 `}
+</div>
         </div>
       </>
     ),
@@ -237,8 +250,9 @@ The deep muscle of the world.
   },
   {
     text: () => (
-      <>
-        <strong>points of inscription</strong>
+      <div className={cx(cs.top, cs.left)}>
+<div>
+<strong>points of inscription</strong>
 {`
 
 how does it feel to draw a chamber of the heart
@@ -264,9 +278,8 @@ see it, so we can
 see it.
 
 
-
 `}
-        <a href="https://open.spotify.com/track/0hQkqM37pYkOuWDDoxk3Ce?si=ne7Qf3XcQlqR_V9Ok-35-w" target="_blank" rel="noopener noreferrer">
+<a href="https://open.spotify.com/track/0hQkqM37pYkOuWDDoxk3Ce?si=ne7Qf3XcQlqR_V9Ok-35-w" target="_blank" rel="noopener noreferrer">
 {`
 [Starry, starry night
 Paint your palette blue and grey
@@ -277,12 +290,17 @@ Sketch the trees and the daffodils
 Catch the breeze and the winter chills
 In colors on the snowy linen land]
 `}
-        </a>
-      </>
+</a>
+</div>
+      </div>
     ),
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1rE_BARL96UflJaAFW3EQ2d-cJ0W7gMPp',
+    },
+    textStyles: {
+      animation: `${cs.club} 16s infinite`,
+      animationTimingFunction: 'ease-in',
     },
     audio: {
       src: 'https://freesound.org/data/previews/331/331530_2305278-lq.mp3',
