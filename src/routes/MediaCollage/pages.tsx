@@ -47,46 +47,54 @@ Peace]
   {
     text: () => (
       <>
-        <strong>points of inscription</strong>
+        <strong>kale salad</strong>
 {`
 
-how does it feel to draw a chamber of the heart
-with your brain, thoughts    pulsing   like ventricles
-ba dum    ba dum    ba dum     a drum unsilenceable
-indefatigable
+i love a good adventure, 
+a jaunt through unknown corners of New York
+an intimate amble over the hills of San Francisco
 
-or to trace the color of his eye
-with the inner ear, motion circularly fluid
-tumbling, dizzy, falling forever
-gooey resin trying to become amber
-
-unfurl the trajectory of a story
-with the spine, wholly flexuous yet
-attentive to being kinked;
-always in danger of herniation
-
-move with warmth
-paint with blood
-
-see it, so you can
-see it, so we can
-see it.
-
-
-
-`}
-        <a href="https://open.spotify.com/track/0hQkqM37pYkOuWDDoxk3Ce?si=ne7Qf3XcQlqR_V9Ok-35-w" target="_blank" rel="noopener noreferrer">
+but what reminds me most of you is
+making kale salad each morning, thinking of your
+hands tenderly shredding as mine do\u0009\u0009\u0009\u0009`}<i>[4-5 large stalks]</i>
 {`
-[Starry, starry night
-Paint your palette blue and grey
-Look out on a summer's day
-With eyes that know the darkness in my soul
-Shadows on the hills
-Sketch the trees and the daffodils
-Catch the breeze and the winter chills
-In colors on the snowy linen land]
+salt, pepper, olive oil,\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009`}<i>[4 pinches, 20 grinds, 4 tbsp]</i>
+{`
+tomatoes, blueberries,        sweet       red bells,\u0009\u0009`}<i>[5 small diced, 3 handfuls, ½ chopped]</i>
+{`
+chicken, lime, cayenne,\u0009\u0009\u0009\u0009\u0009\u0009\u0009`}<i>[5 oz, 1 juiced, generous heaping]</i>
+{`
+
+anticipation
 `}
-        </a>
+{`
+i cut an avocado and the knife     slips,\u0009\u0009\u0009\u0009`}<i>[1 large hass]</i>
+{`
+my heart`}    <sup>jumps</sup>   {`pushing blood out of skin.
+i stare, shrug, slowly dress my own wound.
+
+yet, after all of this,
+i'm still hungry, my appetite still whetted, so
+back to the chopping board and
+the mess we've made:\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009`}<i>[toss]</i>
+{`
+
+salt. fat. acid. heat.\u0009\u0009\u0009\u0009\u0009\u0009\u0009\u0009`}<i>[enjoy]</i>
+<a href="https://open.spotify.com/track/6XpQ9TVrnOLKzdC4hl3mng?si=1xs2_dNmQM-OG1gZtwFHfg" target="_blank" rel="noopener noreferrer">
+{`
+
+
+[Even if you said goodbye, I still love
+Even if a dream may die, I still love,
+Even when my life is through, I still love,
+No matter what you say or do, I still love,
+
+Even if it makes me cry, I still love,
+Even if I don't know why, I still love,
+Even when things fall apart, I still love,
+Even if you break my heart, I still love]
+`}
+</a>
       </>
     ),
     background: {
@@ -220,10 +228,63 @@ The deep muscle of the world.`}
     },
     background: {
       type: 'video',
-      src: 'https://drive.google.com/u/0/uc?id=1Lg3ZcaEzaxHZs23ga_Mem9Hd6ggaXR1F&export=download',
+      src: 'https://drive.google.com/u/0/uc?id=1Lg3ZcaEzaxHZs23ga_Mem9Hd6ggaXR1F',
     },
     audio: {
       src: 'https://freesound.org/data/previews/458/458099_754558-lq.mp3',
+    }
+  },
+  {
+    text: () => (
+      <>
+        <strong>points of inscription</strong>
+{`
+
+how does it feel to draw a chamber of the heart
+with your brain, thoughts    pulsing   like ventricles
+ba dum    ba dum    ba dum     a drum unsilenceable
+indefatigable
+
+or to trace the color of his eye
+with the inner ear, motion circularly fluid
+tumbling, dizzy, falling forever
+gooey resin trying to become amber
+
+unfurl the trajectory of a story
+with the spine, wholly flexuous yet
+attentive to being kinked;
+always in danger of herniation
+
+move with warmth
+paint with blood
+
+see it, so you can
+see it, so we can
+see it.
+
+
+
+`}
+        <a href="https://open.spotify.com/track/0hQkqM37pYkOuWDDoxk3Ce?si=ne7Qf3XcQlqR_V9Ok-35-w" target="_blank" rel="noopener noreferrer">
+{`
+[Starry, starry night
+Paint your palette blue and grey
+Look out on a summer's day
+With eyes that know the darkness in my soul
+Shadows on the hills
+Sketch the trees and the daffodils
+Catch the breeze and the winter chills
+In colors on the snowy linen land]
+`}
+        </a>
+      </>
+    ),
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1rE_BARL96UflJaAFW3EQ2d-cJ0W7gMPp',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/331/331530_2305278-lq.mp3',
     }
   },
 ]

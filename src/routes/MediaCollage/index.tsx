@@ -165,7 +165,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
             <div className={cs.fader}>
               <div className={cs.background}>
                 {selectedPage.background.type === 'video' &&
-                  <video muted autoPlay preload="metadata" loop playsInline>
+                  <video autoPlay preload="metadata" loop playsInline>
                     <source src={selectedPage.background.src} />
                   </video>
                 }
