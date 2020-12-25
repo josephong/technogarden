@@ -203,9 +203,8 @@ no goodbye is ever long enough.`}
       <>
         <div className={cs.topRight}>
         <strong>Crows (excerpt)</strong>
+        <div><i>Mary Oliver</i></div>
 {`
-by Mary Oliver
-
 Drive down any road,
  
 take a train or an airplane
@@ -218,7 +217,9 @@ they’ll be there first,
  
 glossy and rowdy
 and indistinguishable.
-The deep muscle of the world.`}
+The deep muscle of the world.
+
+`}
         </div>
       </>
     ),
