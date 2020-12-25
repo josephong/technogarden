@@ -206,14 +206,24 @@
   flex: 1 1;
 }
 
-.left {
-  justify-content: flex-start;
+.verticalCenter {
   flex: 1 1;
+  align-items: center;
 }
 
 .bottom {
   align-items: flex-end;
   flex: 1 1;
+}
+
+.left {
+  justify-content: flex-start;
+  flex: 1 1;
+}
+
+.horizontalCenter {
+  flex: 1 1;
+  justify-content: center;
 }
 
 .right {
@@ -224,6 +234,12 @@
 .nogrow {
   flex: 0 0;
   margin-right: 60px;
+}
+
+.bunny {
+  position: absolute;
+  height: 60px;
+  bottom: 38vh;
 }
 
 @keyframes club {

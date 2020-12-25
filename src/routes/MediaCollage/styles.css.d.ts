@@ -4,6 +4,7 @@ interface CssExports {
   'background': string;
   'beat': string;
   'bottom': string;
+  'bunny': string;
   'club': string;
   'fadeAppear': string;
   'fadeAppearActive': string;
@@ -14,6 +15,7 @@ interface CssExports {
   'fadeExit': string;
   'fadeExitActive': string;
   'fader': string;
+  'horizontalCenter': string;
   'icons': string;
   'image': string;
   'instruction': string;
@@ -33,6 +35,7 @@ interface CssExports {
   'text': string;
   'textFrame': string;
   'top': string;
+  'verticalCenter': string;
 }
 export const cssExports: CssExports;
 export default cssExports;

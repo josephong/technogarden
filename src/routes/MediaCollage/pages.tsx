@@ -440,7 +440,67 @@ for things?`}
       src: 'https://freesound.org/data/previews/451/451931_612689-lq.mp3',
     }
   },
-
+  {
+    text: () => (
+      <img className={cs.bunny} src="https://media.giphy.com/media/ue7Oh8WdVspgI/giphy.gif" />
+    ),
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
+    },
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1ljy_ckamadtMeh2BztfxYIfAvWPt5KAz',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/423/423401_229952-lq.mp3',
+    }
+  }
 ]
+
+const template = (
+  {
+    text: () => (
+      <div className={cx(cs.top, cs.left)}>
+<div>
+<strong>guilty / pleasure</strong>
+{`
+
+my arms yawn
+drawing this morning out across the horizon
+elasticity returning to quiescence
+the dialectic of id and egos 
+
+having neither brushed my teeth
+nor cleansed the slough of yesterday,
+memory foam and memories foaming,
+fulguration of alacrity postponed,
+
+i masturbate to the previous poem
+
+forgivingly
+`}
+<a href="https://open.spotify.com/track/5OiQrtOkyU2sY7UPmGtUYJ?si=fFho5XygSpCDhXK_gRZ-Rg" target="_blank" rel="noopener noreferrer">
+{`
+[February the 10th
+Sunday
+Noise
+Peace]
+`}
+</a>
+</div>
+      </div>
+    ),
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
+    },
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1V8-l9Wtij_JvDu51Oe6VlNN9qvEe5gLt',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/423/423401_229952-lq.mp3',
+    }
+  }
+)
 
 export default pages
