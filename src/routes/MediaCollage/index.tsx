@@ -36,6 +36,7 @@ let audioContext;
 let fadeGainNode;
 let enterGainNode;
 
+let latestRequest = 0
 const MediaCollage: FunctionComponent<{}> = props => {
   const {page} = useParams()
   const [started, setStarted] = useState(false)
@@ -81,14 +82,18 @@ const MediaCollage: FunctionComponent<{}> = props => {
     setCurrentSource(undefined)
     if (started && selectedPage !== undefined) {
       if (selectedPage.audio !== undefined) {
+        const requestNumber = latestRequest + 1
+        latestRequest = latestRequest + 1
         fetch(selectedPage.audio.src, {signal: controller.signal})
           .then(response => response.arrayBuffer())
           .then(buffer => audioContext.decodeAudioData(buffer))
           .then(decodedBuffer => {
-            const source = audioContext.createBufferSource()
-            source.loop = true
-            source.buffer = decodedBuffer
-            setCurrentSource(source)
+            if (latestRequest === requestNumber) {
+              const source = audioContext.createBufferSource()
+              source.loop = true
+              source.buffer = decodedBuffer
+              setCurrentSource(source)
+            }
           })
       }
     }
