@@ -42,11 +42,6 @@
   text-align: center;
 }
 
-.instructions {
-  margin: 25px;
-  color: #DDD;
-}
-
 @keyframes slidein {
   from {
     opacity: 0;
@@ -59,9 +54,23 @@
   }
 }
 
+.instructions {
+  margin: 25px;
+  color: #DDD;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructionBlock {
+  margin: 0px 30px;
+}
+
 .instruction {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   margin: 5px 0;
   animation-duration: 3s;
@@ -89,7 +98,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 50px;
+    width: 30px;
   }
 
   span {

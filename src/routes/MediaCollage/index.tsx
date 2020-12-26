@@ -136,30 +136,34 @@ const MediaCollage: FunctionComponent<{}> = props => {
                 hey. breathe and then click me.
               </div>
               <div className={cs.instructions}>
-                <div className={cs.instruction}>
-                  <div className={cs.icons}>
-                    <GiClick />
+                <div className={cs.instructionBlock}>
+                  <div className={cs.instruction}>
+                    <div className={cs.icons}>
+                      <GiClick />
+                    </div>
+                    <span>random navigation</span>
                   </div>
-                  <span>random navigation</span>
+                  <div className={cs.instruction}>
+                    <div className={cs.icons}>
+                      <FaRegCaretSquareLeft />
+                      <FaRegCaretSquareRight />
+                    </div>
+                    <span>sequential navigation</span>
+                  </div>
                 </div>
-                <div className={cs.instruction}>
-                  <div className={cs.icons}>
-                    <FaRegCaretSquareLeft />
-                    <FaRegCaretSquareRight />
+                <div className={cs.instrictionBlock}>
+                  <div className={cs.instruction}>
+                    <div className={cs.icons}>
+                      <MdDesktopMac />
+                    </div>
+                    <span>for desktop only</span>
                   </div>
-                  <span>sequential navigation</span>
-                </div>
-                <div className={cs.instruction}>
-                  <div className={cs.icons}>
-                    <AiFillSound />
+                  <div className={cs.instruction}>
+                    <div className={cs.icons}>
+                      <AiFillSound />
+                    </div>
+                    <span>turn on your sound</span>
                   </div>
-                  <span>turn on your sound</span>
-                </div>
-                <div className={cs.instruction}>
-                  <div className={cs.icons}>
-                    <MdDesktopMac />
-                  </div>
-                  <span>for desktop only</span>
                 </div>
               </div>
             </div>

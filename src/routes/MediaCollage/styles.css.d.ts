@@ -19,6 +19,7 @@ interface CssExports {
   'icons': string;
   'image': string;
   'instruction': string;
+  'instructionBlock': string;
   'instructions': string;
   'keyboard': string;
   'left': string;
