@@ -43,6 +43,10 @@ const MediaCollage: FunctionComponent<{}> = props => {
   const selectedPageIdx = page !== undefined ? Number(page) : pages.length - 1
   const selectedPage = pages[selectedPageIdx]
 
+  if (selectedPageIdx >= pages.length || selectedPageIdx < 0 || Number.isNaN(selectedPageIdx)) {
+    history.replace(`/pastiche/${pages.length - 1}`)
+  }
+
   const navigateToRandomPage = e => {
     if (e.target.tagName !== 'A') {
       const newPage = randomPageIdx(selectedPageIdx)
@@ -74,7 +78,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
   useEffect(() => {
     const controller = new AbortController()
     setCurrentSource(undefined)
-    if (started) {
+    if (started && selectedPage !== undefined) {
       if (selectedPage.audio !== undefined) {
         fetch(selectedPage.audio.src, {signal: controller.signal})
           .then(response => response.arrayBuffer())
