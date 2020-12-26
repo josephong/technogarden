@@ -4,6 +4,7 @@ import {random} from 'lodash'
 import {useParams, useHistory} from 'react-router-dom'
 import {AiFillSound} from 'react-icons/ai'
 import {FaRegCaretSquareLeft, FaRegCaretSquareRight} from 'react-icons/fa'
+import {MdDesktopMac} from 'react-icons/md'
 import {GiClick} from 'react-icons/gi'
 
 import cs from './styles.css'
@@ -137,12 +138,6 @@ const MediaCollage: FunctionComponent<{}> = props => {
               <div className={cs.instructions}>
                 <div className={cs.instruction}>
                   <div className={cs.icons}>
-                    <AiFillSound />
-                  </div>
-                  <span>turn on your sound</span>
-                </div>
-                <div className={cs.instruction}>
-                  <div className={cs.icons}>
                     <GiClick />
                   </div>
                   <span>random navigation</span>
@@ -153,6 +148,18 @@ const MediaCollage: FunctionComponent<{}> = props => {
                     <FaRegCaretSquareRight />
                   </div>
                   <span>sequential navigation</span>
+                </div>
+                <div className={cs.instruction}>
+                  <div className={cs.icons}>
+                    <AiFillSound />
+                  </div>
+                  <span>turn on your sound</span>
+                </div>
+                <div className={cs.instruction}>
+                  <div className={cs.icons}>
+                    <MdDesktopMac />
+                  </div>
+                  <span>for desktop only</span>
                 </div>
               </div>
             </div>
