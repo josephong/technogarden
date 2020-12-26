@@ -211,6 +211,19 @@ no goodbye is ever long enough.`}
   },
   {
     text: () => (
+      <div className={cx(cs.top, cs.left)}>
+      </div>
+    ),
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1G1Ux1AbJ9rif9Syje6ImsfYwOcWrAOPM',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/181/181570_1857065-lq.mp3',
+    }
+  },
+  {
+    text: () => (
       <>
         <div className={cx(cs.top, cs.right)}>
 <div>
