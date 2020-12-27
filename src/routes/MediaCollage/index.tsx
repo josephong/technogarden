@@ -48,7 +48,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
 
   const notValidPageIdx = selectedPageIdx >= pages.length || selectedPageIdx < 0 || Number.isNaN(selectedPageIdx)
   if (!toc && notValidPageIdx) {
-    history.replace(`/pastiche/${pages.length - 1}`)
+    history.replace(`/pastiche`)
   }
 
   const navigateToRandomPage = e => {
