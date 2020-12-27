@@ -1,7 +1,7 @@
 const HtmlPlugin = require('html-webpack-plugin')
 
-const {WEBPACK_SERVE} = process.env
-const isDev = Boolean(WEBPACK_SERVE)
+const {WEBPACK_DEV_SERVER} = process.env
+const isDev = Boolean(WEBPACK_DEV_SERVER)
 
 module.exports = {
   entry: `${__dirname}/src`,
@@ -25,8 +25,8 @@ module.exports = {
       inject: false,
     }),
   ],
-  devtool: 'source-map',
-  mode: 'development',
+  devtool: isDev ? undefined : 'source-map',
+  mode: isDev ? 'development' : 'production',
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
   },
