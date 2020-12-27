@@ -15,9 +15,15 @@ module.exports = {
       template: 'src/index.html'
     }),
     new HtmlPlugin({
-      template: 'src/_redirects',
-      filename: '_redirects'
-    })
+      template: `${__dirname}/src/_redirects`,
+      filename: '_redirects',
+      inject: false,
+    }),
+    new HtmlPlugin({
+      template: `${__dirname}/src/rss.tsx`,
+      filename: 'rss.xml',
+      inject: false,
+    }),
   ],
   devtool: 'source-map',
   mode: 'development',
@@ -52,7 +58,10 @@ module.exports = {
       {
         test: /\.css$/,
         include: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          'style-loader',
+          'css-loader'
+        ],
       },
       {
         test: /\.(jpg|eot|otf|svg|ttf|woff|woff2|gif)$/,
