@@ -10,7 +10,7 @@ const rss = `<rss version="2.0">
     <item>
       <title>${title}</title>
       <link>https://joeong.com/pastiche/${i}</link>
-      <author>ong.joseph.y@gmail.com</author>
+      <author>ong.joseph.y@gmail.com (Joseph Ong)</author>
       <description>
         please view this in a modern desktop browser!
         (your rss reader's built-in browser or phone browser probably doesn't have the right features)
