@@ -1,7 +1,7 @@
 import React, {useRef, useEffect, useState} from 'react'
 import {TransitionGroup, CSSTransition} from 'react-transition-group'
 import {random} from 'lodash'
-import {useParams, useHistory} from 'react-router-dom'
+import {useParams, useHistory, Link} from 'react-router-dom'
 import {AiFillSound} from 'react-icons/ai'
 import {FaRegCaretSquareLeft, FaRegCaretSquareRight} from 'react-icons/fa'
 import {MdDesktopMac} from 'react-icons/md'
@@ -44,8 +44,10 @@ const MediaCollage: FunctionComponent<{}> = props => {
   const history = useHistory()
   const selectedPageIdx = page !== undefined ? Number(page) : pages.length - 1
   const selectedPage = pages[selectedPageIdx]
+  const toc = page === "toc"
 
-  if (selectedPageIdx >= pages.length || selectedPageIdx < 0 || Number.isNaN(selectedPageIdx)) {
+  const notValidPageIdx = selectedPageIdx >= pages.length || selectedPageIdx < 0 || Number.isNaN(selectedPageIdx)
+  if (!toc && notValidPageIdx) {
     history.replace(`/pastiche/${pages.length - 1}`)
   }
 
@@ -69,18 +71,20 @@ const MediaCollage: FunctionComponent<{}> = props => {
   }
 
   const startAudioContext = () => {
-    audioContext = new AudioContext()
-    fadeGainNode = audioContext.createGain()
-    enterGainNode = audioContext.createGain()
-    fadeGainNode.connect(audioContext.destination)
-    enterGainNode.connect(audioContext.destination)
-    setStarted(true)
+    if (!started) {
+      audioContext = new AudioContext()
+      fadeGainNode = audioContext.createGain()
+      enterGainNode = audioContext.createGain()
+      fadeGainNode.connect(audioContext.destination)
+      enterGainNode.connect(audioContext.destination)
+      setStarted(true)
+    }
   }
 
   useEffect(() => {
     const controller = new AbortController()
     setCurrentSource(undefined)
-    if (started && selectedPage !== undefined) {
+    if (started && !toc && selectedPage !== undefined) {
       if (selectedPage.audio !== undefined) {
         const requestNumber = latestRequest + 1
         latestRequest = latestRequest + 1
@@ -101,7 +105,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
     return () => {
       controller.abort()
     }
-  }, [started, selectedPage])
+  }, [started, toc, selectedPage])
 
   useEffect(() => {
     if (currentSource !== undefined) {
@@ -125,11 +129,11 @@ const MediaCollage: FunctionComponent<{}> = props => {
   return (
     <div className={cs.media}
       tabIndex={0}
-      onClick={started ? navigateToRandomPage : () => {}}
-      onKeyDown={started ? navigateViaKeyboard : () => {}}
+      onClick={started && !toc ? navigateToRandomPage : () => {}}
+      onKeyDown={started && !toc? navigateViaKeyboard : () => {}}
     > 
       <TransitionGroup component={null}>
-        {!started && (
+        {!started && !toc && (
           <CSSTransition
             in={true}
             appear={true}
@@ -171,10 +175,35 @@ const MediaCollage: FunctionComponent<{}> = props => {
                   </div>
                 </div>
               </div>
+              <div className={cs.footer}>
+                <Link className={cs.preambleLink} to="/pastiche/toc">toc</Link>
+              </div>
             </div>
           </CSSTransition>
-        )}  
-        {started && (
+        )}
+        {toc && (
+          <CSSTransition
+            in={true}
+            appear={true}
+            timeout={TRANSITION_MS}
+            classNames={fadeClasses}
+          >
+            <ol className={cs.toc} start={0}>
+              {pages.map((page, i) => (
+                <li key={i}>
+                  <Link
+                    className={cs.preambleLink}
+                    onClick={startAudioContext}
+                    to={`/pastiche/${i}`}
+                  >
+                    {page.title}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </CSSTransition>
+        )}
+        {started && !toc && (
           <CSSTransition
             in={true}
             appear={true}

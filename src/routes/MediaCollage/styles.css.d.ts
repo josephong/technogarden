@@ -15,6 +15,7 @@ interface CssExports {
   'fadeExit': string;
   'fadeExitActive': string;
   'fader': string;
+  'footer': string;
   'horizontalCenter': string;
   'icons': string;
   'image': string;
@@ -26,6 +27,7 @@ interface CssExports {
   'media': string;
   'nogrow': string;
   'preamble': string;
+  'preambleLink': string;
   'pulse0': string;
   'pulse1': string;
   'pulse2': string;
@@ -35,6 +37,7 @@ interface CssExports {
   'start': string;
   'text': string;
   'textFrame': string;
+  'toc': string;
   'top': string;
   'verticalCenter': string;
 }

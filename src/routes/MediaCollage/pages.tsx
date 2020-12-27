@@ -5,6 +5,7 @@ import cs from './styles.css'
 
 const pages = [
   {
+    title: 'guilty / pleasure',
     text: () => (
       <div className={cx(cs.top, cs.left)}>
 <div>
@@ -48,6 +49,7 @@ Peace]
     }
   },
   {
+    title: 'kale salad',
     text: () => (
       <div className={cx(cs.top, cs.left)}>
 <div>
@@ -111,6 +113,7 @@ Even if you break my heart, I still love]
     }
   },
   {
+    title: 'this night is not for us',
     text: () => (
       <div className={cx(cs.top, cs.left)}>
 <div>
@@ -157,6 +160,7 @@ for        me
     }
   },
   {
+    title: 'no goodbye is ever long enough',
     text: () => (
       <>
         <div className={cx(cs.top, cs.left)}>
@@ -210,10 +214,8 @@ no goodbye is ever long enough.`}
     }
   },
   {
-    text: () => (
-      <div className={cx(cs.top, cs.left)}>
-      </div>
-    ),
+    title: 'incense',
+    text: () => <div />,
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1G1Ux1AbJ9rif9Syje6ImsfYwOcWrAOPM',
@@ -223,6 +225,7 @@ no goodbye is ever long enough.`}
     }
   },
   {
+    title: 'crows by mary oliver',
     text: () => (
       <>
         <div className={cx(cs.top, cs.right)}>
@@ -262,6 +265,7 @@ The deep muscle of the world.
     }
   },
   {
+    title: 'points of inscription',
     text: () => (
       <div className={cx(cs.top, cs.left)}>
 <div>
@@ -321,6 +325,7 @@ In colors on the snowy linen land]
     }
   },
   {
+    title: 'superreal',
     text: () => <div />,
     textStyles: {
       textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
@@ -334,6 +339,7 @@ In colors on the snowy linen land]
     }
   },
   {
+    title: 'i\'m just dancing on my own',
     text: () => (
       <div className={cx(cs.top, cs.left)}>
 <div>
@@ -391,6 +397,7 @@ i am here to lose myself.
     }
   },
   {
+    title: 'the sun by mary oliver',
     text: () => (
       <>
         <div className={cx(cs.top, cs.left, cs.nogrow)}>
@@ -467,6 +474,7 @@ for things?`}
     }
   },
   {
+    title: 'mormon hollow',
     text: () => (
       <img className={cs.bunny} src="https://media.giphy.com/media/ue7Oh8WdVspgI/giphy.gif" />
     ),
