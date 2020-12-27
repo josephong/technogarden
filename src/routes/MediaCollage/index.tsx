@@ -177,6 +177,15 @@ const MediaCollage: FunctionComponent<{}> = props => {
               </div>
               <div className={cs.footer}>
                 <Link className={cs.preambleLink} to="/pastiche/toc">toc</Link>
+                /
+                <a
+                  className={cs.preambleLink}
+                  href="/pastiche/rss"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >rss</a>
+                /
+                <Link className={cs.preambleLink} to="/">joeong.com</Link>
               </div>
             </div>
           </CSSTransition>

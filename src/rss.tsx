@@ -10,7 +10,7 @@ const rss = `<rss version="2.0">
     <item>
       <title>${title}</title>
       <link>https://joeong.com/pastiche/${i}</link>
-      <pubDate>25/12/2020</pubDate>
+      <pubDate>${metadata[title].date}</pubDate>
     </item>`).join('')}
   </channel>
 </rss>

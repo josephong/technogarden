@@ -14,6 +14,7 @@ const order = [
 
 const metadata = {
   'guilty / pleasure': {
+    date: '23/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1V8-l9Wtij_JvDu51Oe6VlNN9qvEe5gLt',
@@ -23,6 +24,7 @@ const metadata = {
     }
   },
   'kale salad': {
+    date: '23/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1m1t4xIVO2atJ1sfEwJBnbKMkr9MQk9vG',
@@ -32,6 +34,7 @@ const metadata = {
     }
   },
   'this night is not for us': {
+    date: '23/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1WR2DHka5dNy3UtwJsaWRHbHE_wunY9pr',
@@ -41,6 +44,7 @@ const metadata = {
     }
   },
   'no goodbye is ever long enough': {
+    date: '23/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1k2IPfzhFXKsiNcUKkaWOUWkW6QicJFbH',
@@ -50,6 +54,7 @@ const metadata = {
     }
   },
   'incense': {
+    date: '26/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1G1Ux1AbJ9rif9Syje6ImsfYwOcWrAOPM',
@@ -59,6 +64,7 @@ const metadata = {
     }
   },
   'crows by mary oliver': {
+    date: '24/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1Lg3ZcaEzaxHZs23ga_Mem9Hd6ggaXR1F',
@@ -68,6 +74,7 @@ const metadata = {
     }
   },
   'points of inscription': {
+    date: '24/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1rE_BARL96UflJaAFW3EQ2d-cJ0W7gMPp',
@@ -77,6 +84,7 @@ const metadata = {
     }
   },
   'superreal': {
+    date: '26/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1ABFWco3O6CrZEPRoo2121b90dOVXdVzp',
@@ -86,6 +94,7 @@ const metadata = {
     }
   },
   'i\'m just dancing on my own': {
+    date: '24/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1hszRKGH4uFbp97ymKDb5dKCo8lnnEjvt',
@@ -95,6 +104,7 @@ const metadata = {
     }
   },
   'the sun by mary oliver': {
+    date: '25/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1x4rSJNVp2JJJAu3So56Iorytu3HwhGlE',
@@ -104,6 +114,7 @@ const metadata = {
     }
   },
   'mormon hollow': {
+    date: '25/12/2020',
     background: {
       type: 'video',
       src: 'https://drive.google.com/u/0/uc?id=1ljy_ckamadtMeh2BztfxYIfAvWPt5KAz',
