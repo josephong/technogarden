@@ -42,8 +42,8 @@ const MediaCollage: FunctionComponent<{}> = props => {
   const [started, setStarted] = useState(false)
   const [currentSource, setCurrentSource] = useState(undefined)
   const history = useHistory()
-  const selectedPageIdx = page !== undefined ? Number(page) : pages.length - 1
-  const selectedPage = pages[selectedPageIdx]
+  const selectedPageIdx = page !== undefined ? Number(page) : undefined
+  const selectedPage = selectedPageIdx !== undefined ? pages[selectedPageIdx] : undefined
   const toc = page === "toc"
 
   const notValidPageIdx = selectedPageIdx >= pages.length || selectedPageIdx < 0 || Number.isNaN(selectedPageIdx)
@@ -56,6 +56,10 @@ const MediaCollage: FunctionComponent<{}> = props => {
       const newPage = randomPageIdx(selectedPageIdx)
       history.push(`/pastiche/${newPage}`)
     }
+  }
+
+  const navigateToLatest = () => {
+      history.push(`/pastiche/${pages.length - 1}`)
   }
 
   const navigateViaKeyboard = e => {
@@ -126,14 +130,18 @@ const MediaCollage: FunctionComponent<{}> = props => {
     }
   }, [currentSource])
 
+  // logic is complicated here because every direct landing requires
+  // a user interaction to initiate the web audio api
+  const viewingPastiches = started && selectedPage !== undefined && !toc
+  const viewingLanding = (!started || selectedPage === undefined) && !toc
   return (
     <div className={cs.media}
       tabIndex={0}
-      onClick={started && !toc ? navigateToRandomPage : () => {}}
-      onKeyDown={started && !toc? navigateViaKeyboard : () => {}}
+      onClick={viewingPastiches ? navigateToRandomPage : () => {}}
+      onKeyDown={viewingPastiches ? navigateViaKeyboard : () => {}}
     > 
       <TransitionGroup component={null}>
-        {!started && !toc && (
+        {viewingLanding && (
           <CSSTransition
             in={true}
             appear={true}
@@ -141,7 +149,12 @@ const MediaCollage: FunctionComponent<{}> = props => {
             classNames={fadeClasses}
           >
             <div className={cs.preamble}>
-              <div className={cs.start} onClick={startAudioContext}>
+              <div className={cs.start} onClick={() => {
+                startAudioContext()
+                if (selectedPage === undefined) {
+                  navigateToLatest()
+                }
+              }}>
                 hey. breathe and then click me.
               </div>
               <div className={cs.instructions}>
@@ -212,7 +225,7 @@ const MediaCollage: FunctionComponent<{}> = props => {
             </ol>
           </CSSTransition>
         )}
-        {started && !toc && (
+        {viewingPastiches && (
           <CSSTransition
             in={true}
             appear={true}
