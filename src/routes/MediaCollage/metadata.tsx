@@ -10,6 +10,7 @@ const order = [
   'i\'m just dancing on my own',
   'the sun by mary oliver',
   'mormon hollow',
+  'desiderata by max ehrmann',
 ]
 
 const metadata = {
@@ -121,6 +122,16 @@ const metadata = {
     },
     audio: {
       src: 'https://freesound.org/data/previews/423/423401_229952-lq.mp3',
+    }
+  },
+  'desiderata by max ehrmann': {
+    date: '25/27/2020',
+    background: { 
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1lPZS1NafBwqUfHsg7XNZRGQ1oz5P87Pt',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/344/344966_4034520-lq.mp3',
     }
   },
 }

@@ -6,7 +6,7 @@ import cs from './styles.css'
 const text = {
   'guilty / pleasure': {
     text: () => (
-      <div className={cx(cs.top, cs.left)}>
+<div className={cx(cs.top, cs.left)}>
 <div>
 <strong>guilty / pleasure</strong>
 {`
@@ -34,7 +34,7 @@ Peace]
 `}
 </a>
 </div>
-      </div>
+</div>
     ),
     textStyles: {
       textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
@@ -42,7 +42,7 @@ Peace]
   },
   'kale salad': {
     text: () => (
-      <div className={cx(cs.top, cs.left)}>
+<div className={cx(cs.top, cs.left)}>
 <div>
 <strong>kale salad</strong>
 {`
@@ -93,12 +93,12 @@ Even if you break my heart, I still love]
 `}
 </a>
 </div>
-      </div>
+</div>
     ),
   },
   'this night is not for us': {
     text: () => (
-      <div className={cx(cs.top, cs.left)}>
+<div className={cx(cs.top, cs.left)}>
 <div>
 <strong>this night is not for us</strong>
 {`
@@ -129,7 +129,7 @@ through years of endless spring]`}
 for        me
 `}
 </div>
-      </div>
+</div>
     ),
     textStyles: {
       color: '#3c4e5c',
@@ -138,7 +138,7 @@ for        me
   'no goodbye is ever long enough': {
     text: () => (
       <>
-        <div className={cx(cs.top, cs.left)}>
+<div className={cx(cs.top, cs.left)}>
 <div>
 <strong>no goodbye is ever long enough</strong>
 {`
@@ -160,8 +160,8 @@ i wade through your lush garden, 
 rose petals fluttering to the ground
 as only thorns remain.`}
 </div>
-        </div>
-        <div className={cx(cs.bottom, cs.right)}>
+</div>
+<div className={cx(cs.bottom, cs.right)}>
 <div>
 {`we fall asleep watching the`} <i>The Endless</i>
 {`
@@ -177,7 +177,7 @@ bereft, i realize:
 
 no goodbye is ever long enough.`}
 </div>
-        </div>
+</div>
       </>
     ),
   },
@@ -187,7 +187,7 @@ no goodbye is ever long enough.`}
   'crows by mary oliver': {
     text: () => (
       <>
-        <div className={cx(cs.top, cs.right)}>
+<div className={cx(cs.top, cs.right)}>
 <div>
         <strong>Crows (excerpt)</strong>
         <div><i>Mary Oliver</i></div>
@@ -208,7 +208,7 @@ The deep muscle of the world.
 
 `}
 </div>
-        </div>
+</div>
       </>
     ),
     textStyles: {
@@ -218,7 +218,7 @@ The deep muscle of the world.
   },
   'points of inscription': {
     text: () => (
-      <div className={cx(cs.top, cs.left)}>
+<div className={cx(cs.top, cs.left)}>
 <div>
 <strong>points of inscription</strong>
 {`
@@ -261,7 +261,7 @@ In colors on the snowy linen land]
 `}
 </a>
 </div>
-      </div>
+</div>
     ),
     textStyles: {
       animation: `${cs.club} 16s infinite`,
@@ -327,7 +327,7 @@ i am here to lose myself.
   'the sun by mary oliver': {
     text: () => (
       <>
-        <div className={cx(cs.top, cs.left, cs.nogrow)}>
+<div className={cx(cs.top, cs.left, cs.nogrow)}>
 <div>
 <strong>The Sun</strong>
 <div><i>Mary Oliver</i></div>
@@ -347,8 +347,8 @@ or the rumpled sea,
 and is gone--
 and how it slides again`}
 </div>
-        </div>
-        <div className={cx(cs.top, cs.left, cs.nogrow)}>
+</div>
+<div className={cx(cs.top, cs.left, cs.nogrow)}>
 {`
 
 
@@ -400,6 +400,86 @@ for things?`}
     textStyles: {
       textShadow: '1px 1px 1px rgba(0, 0, 0, 0.1)',
     },
+  },
+  'desiderata by max ehrmann': {
+    text: () => (
+<>
+<div className={cx(cs.bottom, cs.left, cs.nogrow)}>
+<div>
+<div><strong>Desiderata</strong></div>
+<div><emph>Max Ehrmann (1927)</emph></div>
+{`
+Go placidly amid the noise and haste,
+and remember what peace there may be in silence.
+As far as possible without surrender
+be on good terms with all persons.
+Speak your truth quietly and clearly;
+and listen to others,
+even the dull and the ignorant;
+they too have their story.
+
+Avoid loud and aggressive persons,
+they are vexations to the spirit.
+If you compare yourself with others,
+you may become vain and bitter;
+for always there will be greater and lesser persons than yourself.
+Enjoy your achievements as well as your plans.
+
+Keep interested in your own career, however humble;
+it is a real possession in the changing fortunes of time.
+Exercise caution in your business affairs;
+for the world is full of trickery.
+But let this not blind you to what virtue there is;
+many persons strive for high ideals;
+and everywhere life is full of heroism.
+`}
+</div>
+</div>
+<div className={cx(cs.bottom, cs.left, cs.nogrow)}>
+{`
+
+
+Be yourself.
+Especially, do not feign affection.
+Neither be cynical about love;
+for in the face of all aridity and disenchantment
+it is as perennial as the grass.
+
+Take kindly the counsel of the years,
+gracefully surrendering the things of youth.
+Nurture strength of spirit to shield you in sudden misfortune.
+But do not distress yourself with dark imaginings.
+Many fears are born of fatigue and loneliness.
+Beyond a wholesome discipline,
+be gentle with yourself.
+
+You are a child of the universe,
+no less than the trees and the stars;
+you have a right to be here.
+And whether or not it is clear to you,
+no doubt the universe is unfolding as it should.
+`}
+</div>
+<div className={cx(cs.bottom, cs.left, cs.nogrow)}>
+{`
+
+
+Therefore be at peace with God,
+whatever you conceive Him to be,
+and whatever your labors and aspirations,
+in the noisy confusion of life keep peace with your soul.
+
+With all its sham, drudgery, and broken dreams,
+it is still a beautiful world.
+Be cheerful.
+Strive to be happy.`}
+</div>
+</>
+    ),
+    textStyles: {
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.4)',
+      background: 'linear-gradient(210deg, #0000 0%, #00000069 80%)',
+    }
   },
 }
 

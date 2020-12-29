@@ -73,5 +73,6 @@ module.exports = {
     clientLogLevel: 'warn',
     historyApiFallback: true,
     open: true,
+    https: true,
   },
 }
