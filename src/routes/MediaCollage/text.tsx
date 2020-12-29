@@ -436,10 +436,7 @@ and everywhere life is full of heroism.
 </div>
 </div>
 <div className={cx(cs.bottom, cs.left, cs.nogrow)}>
-{`
-
-
-Be yourself.
+{`Be yourself.
 Especially, do not feign affection.
 Neither be cynical about love;
 for in the face of all aridity and disenchantment
@@ -461,10 +458,7 @@ no doubt the universe is unfolding as it should.
 `}
 </div>
 <div className={cx(cs.bottom, cs.left, cs.nogrow)}>
-{`
-
-
-Therefore be at peace with God,
+{`Therefore be at peace with God,
 whatever you conceive Him to be,
 and whatever your labors and aspirations,
 in the noisy confusion of life keep peace with your soul.
