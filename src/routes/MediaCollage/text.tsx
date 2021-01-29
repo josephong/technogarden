@@ -407,7 +407,7 @@ for things?`}
 <div className={cx(cs.bottom, cs.left, cs.nogrow)}>
 <div>
 <div><strong>Desiderata</strong></div>
-<div><emph>Max Ehrmann (1927)</emph></div>
+<div><i>Max Ehrmann (1927)</i></div>
 {`
 Go placidly amid the noise and haste,
 and remember what peace there may be in silence.
@@ -474,6 +474,29 @@ Strive to be happy.`}
       textShadow: '1px 1px 1px rgba(0, 0, 0, 0.4)',
       background: 'linear-gradient(210deg, #0000 0%, #00000069 80%)',
     }
+  },
+  'sometimes by mary oliver': {
+    text: () => (
+<>
+<div className={cs.verticalCenter}>
+<div>
+<div><strong>Sometimes (#4)</strong></div>
+<div><i>Mary Oliver</i></div>
+{`
+Instructions for living a life:`}
+<i>
+{`
+Pay attention.
+Be astonished.
+Tell about it.
+
+
+`}
+</i>
+</div>
+</div>
+</>
+    ),
   },
 }
 

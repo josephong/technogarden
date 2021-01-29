@@ -250,7 +250,7 @@
   justify-content: stretch;
 }
 
-.top, .left, .bottom, .right {
+.top, .left, .bottom, .right, .verticalCenter, .horizontalCenter {
   display: flex;
   flex-direction: row;
 }
