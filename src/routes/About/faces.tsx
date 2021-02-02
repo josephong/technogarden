@@ -100,7 +100,7 @@ racc  __' .::'
 `❁`,
 `❃`,
 `hi friend`,
-`under construction`,
+`always under construction`,
 `nice to see u`,
 ]
 
