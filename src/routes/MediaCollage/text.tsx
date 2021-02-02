@@ -500,6 +500,20 @@ Tell about it.
 </>
     ),
   },
+  'snowfall': {
+    text: () => (
+<>
+<div className={cx(cs.bottom, cs.right)}>
+<div>
+{`when snow falls,
+
+`}
+<i>             nature listens</i>.
+</div>
+</div>
+</>
+    ),
+  },
 }
 
 export default text

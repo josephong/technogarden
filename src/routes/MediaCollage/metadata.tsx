@@ -12,6 +12,7 @@ const order = [
   'mormon hollow',
   'desiderata by max ehrmann',
   'sometimes by mary oliver',
+  'snowfall',
 ]
 
 const metadata = {
@@ -145,6 +146,16 @@ const metadata = {
       src: 'https://freesound.org/data/previews/47/47541_215874-lq.mp3',
     }
   },
+  'snowfall': {
+    date: '02/02/2021',
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=17ckwFND6YzXRGuPlWqcVwMv3jfHH05_A',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/382/382270_7109435-lq.mp3',
+    }
+  }
 }
 
 export {
