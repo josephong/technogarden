@@ -93,7 +93,6 @@ const MediaCollage: FunctionComponent<{}> = props => {
         const requestNumber = latestRequest + 1
         latestRequest = latestRequest + 1
         fetch(selectedPage.audio.src, {signal: controller.signal})
-          .then(response => {console.log(response); return response})
           .then(response => response.arrayBuffer())
           .then(buffer => audioContext.decodeAudioData(buffer))
           .then(decodedBuffer => {

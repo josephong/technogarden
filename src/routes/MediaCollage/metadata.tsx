@@ -13,6 +13,7 @@ const order = [
   'desiderata by max ehrmann',
   'sometimes by mary oliver',
   'snowfall',
+  'recreation by audre lorde',
 ]
 
 const metadata = {
@@ -154,6 +155,16 @@ const metadata = {
     },
     audio: {
       src: 'https://freesound.org/data/previews/382/382270_7109435-lq.mp3',
+    }
+  },
+  'recreation by audre lorde': {
+    date: '02/18/2021',
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1Yfn55lbJa6nGFhcn_BJ3KV_ZVcE4Jv95',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/261/261394_4877546-lq.mp3'
     }
   }
 }
