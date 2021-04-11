@@ -1,10 +1,6 @@
 import {max} from 'lodash'
 
-const text = [
-`<a href="https://josephong.tumblr.com">we are all stories</a>
-`,
-`<a href="/pastiche/">pastiche</a>
-`,
+const pictures = [
 `                              .                : :
             _..----..__   __..:'.-'''-.-''    .  :
           .'      ,    '''    '    :   .'    /  '
@@ -104,12 +100,21 @@ racc  __' .::'
 `nice to see u`,
 ]
 
-const faces = text.map(t => {
+const urls = [
+`<a href="https://josephong.tumblr.com">2. we are all stories</a>
+`,
+`<a href="https://wemadeallofthis.tumblr.com">3. we made all of this</a>
+`,
+`<a href="/pastiche/">1. pastiche</a>
+`,
+]
+
+const layout = collection => collection.map(t => {
   const height = t.split('\n').length
   const width = max(t.split('\n').map(line => line.length))
   const fontSize = `${15 - Math.floor(Math.max(height, width) ** 0.5)}px`
   return {text: t, height, width, fontSize}
 })
 
-export default faces
-
+export const links = layout(urls)
+export const faces = layout(pictures)

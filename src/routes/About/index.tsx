@@ -5,7 +5,7 @@ import useComponentSize from '@rehooks/component-size'
 import * as d3 from 'd3'
 
 import cs from './styles.css'
-import faces from './faces.tsx'
+import {links, faces} from './faces.tsx'
 
 const generateRanges = fs => {
   const incidence = fs.map(f => 1 / ((f.width * f.height) ** 0.3))
@@ -17,16 +17,25 @@ const generateRanges = fs => {
 }
 
 const ranges = generateRanges(faces)
-const generateNodes = size => [0, ...range(0, 100).map(() => Math.random())]
+const generateRandomFaceIndices = () => range(0, 100).map(() => Math.random())
   .map(entry => findIndex(ranges, range => range > entry))
-  .map((faceIdx, i)  => ({
-    id: i,
-    radius: (faces[faceIdx].width * faces[faceIdx].height) ** 0.25 * 20,
-    fontSize: faces[faceIdx].fontSize,
-    text: faces[faceIdx].text,
-    x: Math.random() * size.width,
-    y: Math.random() * size.height,
-  }))
+
+const createNodeFromFace = (id, face, size) => ({
+  id,
+  radius: (face.width * face.height) ** 0.25 * 20,
+  fontSize: face.fontSize,
+  text: face.text,
+  x: Math.random() * size.width,
+  y: Math.random() * size.height,
+})
+
+const createNodesFromFaceIndices = (faceSource, faceIdxs, size, prefix) =>
+  faceIdxs.map((faceIdx, i) => createNodeFromFace(`${prefix}-${i}`, faceSource[faceIdx], size))
+
+const generateNodes = size => ([
+  ...createNodesFromFaceIndices(links, range(0, links.length), size, 'links'),
+  ...createNodesFromFaceIndices(faces, generateRandomFaceIndices(), size, 'faces'),
+])
 
 var interval;
 const About: FunctionComponent<{}> = () => {
