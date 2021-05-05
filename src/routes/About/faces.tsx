@@ -101,11 +101,11 @@ racc  __' .::'
 ]
 
 const urls = [
-`<a href="https://josephong.tumblr.com">2. we are all stories</a>
-`,
-`<a href="https://wemadeallofthis.tumblr.com">3. we made all of this</a>
-`,
 `<a href="/pastiche/">1. pastiche</a>
+`,
+`<a href="https://josephong.tumblr.com">2. tumblr</a>
+`,
+`<a href="https://weareallstories.substack.com">3. substack</a>
 `,
 ]
 
