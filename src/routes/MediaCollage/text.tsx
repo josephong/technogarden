@@ -552,6 +552,48 @@ into me.
 </div>
 </>
     ),
+  },
+  'fagradalsfjall': {
+    textStyles: {
+      color: '#DDD',
+      textShadow: '1px 1px 1px rgba(0, 0, 0, 0.3)',
+      background: 'linear-gradient(270deg, #FFF0 0%, #0006 90%)',
+    },
+    text: () => (
+<>
+<div className={cs.bottom}>
+<div>
+<div><strong>fagradalsfjall</strong></div>
+{`
+as i hike up the steep slopes of fagradasfjall
+tempo of my chest rising,
+i see that he too exhales –
+    heady sulfur smoldering from fumaroles
+    intoxicating poison mixing in my lungs
+
+i proceed, humbly, senses wary of his tension,
+hearing deep chambers of magma searching,
+    no, `}<i>yearning</i>{` for a juncture
+to finally break free
+
+and as the crater's rim approaches,
+as my heart hopes – 
+    both eagerly and preparedly,
+i wonder what i will find erupting today
+
+perhaps `}<i>'a'ā</i>{`, smooth and effusive
+      picturesque generosity endlessly flowing
+perhaps `}<i>pāhoehoe</i>{`, slow and undulating
+      ropes of complexity tripping over themselves
+perhaps geysers of lava, explosive yet intermittent
+      mercurially agitated from volatile depths
+
+or perhaps, perhaps, a quiet nothing at all
+`}
+</div>
+</div>
+</>
+    ),
   }
 }
 

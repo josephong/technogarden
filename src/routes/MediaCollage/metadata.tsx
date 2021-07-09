@@ -14,6 +14,7 @@ const order = [
   'sometimes by mary oliver',
   'snowfall',
   'recreation by audre lorde',
+  'fagradalsfjall',
 ]
 
 const metadata = {
@@ -165,6 +166,16 @@ const metadata = {
     },
     audio: {
       src: 'https://freesound.org/data/previews/261/261394_4877546-lq.mp3'
+    }
+  },
+  'fagradalsfjall': {
+    date: '07/09/2021',
+    background: {
+      type: 'video',
+      src: 'https://drive.google.com/u/0/uc?id=1iv9SZ4aBs2QFXnMxXyc-sNPSjjfoK7Sf',
+    },
+    audio: {
+      src: 'https://freesound.org/data/previews/579/579856_1291448-lq.mp3',
     }
   }
 }
