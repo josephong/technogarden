@@ -565,7 +565,7 @@ into me.
 <div>
 <div><strong>fagradalsfjall</strong></div>
 {`
-as i hike up the steep slopes of fagradasfjall
+as i hike up the steep slopes of fagradalsfjall
 tempo of my chest rising,
 i see that he too exhales –
     heady sulfur smoldering from fumaroles
